@@ -1,0 +1,9 @@
+/* TEAM */
+    Junior Ales
+    Twitter: @junior_ales
+    Site: http://about.me/juniorales
+
+/* SITE */
+    Language: Portuguese
+    Doctype: HTML5
+    Tools: VIM, GIMP
