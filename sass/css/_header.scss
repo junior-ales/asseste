@@ -4,6 +4,20 @@
   transition: $property .3s ease;
 }
 
+@media only screen and (min-width: 40.063em) {
+  #big-topbar {
+    & a { font-size: 1.4em; }
+    & section.small-2 { padding: 10px; }
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  #big-topbar {
+    & a { font-size: 1.8em; }
+    & section.small-2 { padding: 20px; }
+  }
+}
+
 #small-topbar {
   background-color: $primaryColor;
   & .top-bar-section a {
@@ -24,7 +38,6 @@
 
 #big-topbar {
   & a {
-    font-size: 1.8em;
     color: $tertiaryColor;
     opacity: 0.8;
     @include transition(opacity);
@@ -36,7 +49,6 @@
   }
   & section.small-2 {
     top: 120px;
-    padding: 20px;
     @include transition(background-color);
 
     &:hover {
