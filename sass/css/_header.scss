@@ -4,6 +4,19 @@
   transition: $property .3s ease;
 }
 
+#small-topbar {
+  background-color: $primaryColor;
+  & .top-bar-section a {
+    background-color: $secondaryColor;
+    &:hover { background-color: darken($secondaryColor, 15%); }
+  }
+  & hr {
+    margin: 0px;
+    border: solid darken($secondaryColor, 5%);
+    border-width: 1px 0 0;
+  }
+}
+
 #container-big-topbar {
   background-color: $primaryColor;
   min-height: 150px;
@@ -15,7 +28,6 @@
     color: $tertiaryColor;
     opacity: 0.8;
     @include transition(opacity);
-
     &:hover { opacity: 1; }
   }
   & img {
