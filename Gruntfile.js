@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    clean: [path.join(__dirname,'public','css','tmp')],
+    clean: [path.join(__dirname,'public','css','*')],
     watch: {
       files: [ 'views/**/*.html', 'sass/**/*.scss', 'public/js/**/*.js', './*.js' ],
       tasks: ['jshint', 'sass', 'clean', 'reload'],

@@ -1,0 +1,35 @@
+@mixin transition($property: all) {
+  -webkit-transition: $property .3s ease;
+  -moz-transition: $property .3s ease;
+  transition: $property .3s ease;
+}
+
+#container-big-topbar {
+  background-color: $primaryColor;
+  min-height: 150px;
+}
+
+#big-topbar {
+  & a {
+    font-size: 1.8em;
+    color: $tertiaryColor;
+    opacity: 0.8;
+    @include transition(opacity);
+
+    &:hover { opacity: 1; }
+  }
+  & img {
+    margin: 20px;
+    max-height: 180px;
+  }
+  & section.small-2 {
+    top: 120px;
+    padding: 20px;
+    @include transition(background-color);
+
+    &:hover {
+      background-color: $tertiaryColor;
+      & a { color: $primaryColor; }
+    }
+  }
+}
