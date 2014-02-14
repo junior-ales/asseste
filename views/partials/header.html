@@ -10,7 +10,7 @@
     <meta name="robots" content="index,follow" />
     <meta name="author" content="Junior Ales" />
 
-    <title>Asseste Extintores</title>
+    <title>Asseste Extintores<%- title %></title>
 
     <link rel="stylesheet" href="foundation/css/normalize.css">
     <link rel="stylesheet" href="foundation/css/foundation.css">
@@ -31,27 +31,27 @@
         </ul>
         <section class="top-bar-section">
           <ul class="right">
-            <li class="active"><a href="#">Produtos</a></li>
+            <li class="active"><a href="/produtos">Produtos</a></li>
             <hr />
-            <li class="active"><a href="#">Serviços</a></li>
+            <li class="active"><a href="/servicos">Serviços</a></li>
             <hr />
-            <li class="active"><a href="#">Contato</a></li>
+            <li class="active"><a href="/contato">Contato</a></li>
           </ul>
         </section>
       </nav>
       <section id="container-big-topbar" class="small-12 columns hide-for-small-only">
         <nav id="big-topbar" class="row">
           <section class="small-6 columns">
-            <a href="/"><img src="img/logo.jpg" alt="Asseste Extintores" /></a>
+            <a href="/" data-nav-link><img src="img/logo.jpg" alt="Asseste Extintores" /></a>
           </section>
-          <section class="small-2 columns text-center">
-            <a href="#">Produtos</a>
+          <section class="small-2 columns text-center" data-nav-link="produtos">
+            <a href="/produtos">Produtos</a>
           </section>
-          <section class="small-2 columns text-center">
-            <a href="#">Serviços</a>
+          <section class="small-2 columns text-center" data-nav-link="servicos">
+            <a href="/servicos">Serviços</a>
           </section>
-          <section class="small-2 columns text-center">
-            <a href="#">Contato</a>
+          <section class="small-2 columns text-center" data-nav-link="contato">
+            <a href="/contato">Contato</a>
           </section>
         </nav>
       </section>
