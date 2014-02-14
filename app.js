@@ -22,16 +22,7 @@ var app = function () {
   app.use(logfmt.requestLogger());
 
   app.get('/', function(req, res) {
-    res.render('index.html', { title: '' });
-  });
-  app.get('/produtos', function(req, res) {
-    res.render('produtos.html', { title: ' - Produtos' });
-  });
-  app.get('/servicos', function(req, res) {
-    res.render('servicos.html', { title: ' - Serviços' });
-  });
-  app.get('/contato', function(req, res) {
-    res.render('contato.html', { title: ' - Contato' });
+    res.render('index.html');
   });
 
   return app;

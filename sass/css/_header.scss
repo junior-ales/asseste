@@ -34,7 +34,6 @@
 #container-big-topbar {
   background-color: $primaryColor;
   min-height: 150px;
-  border-bottom: solid 20px $secondaryColor;
 }
 
 #big-topbar {
@@ -42,7 +41,7 @@
     color: $tertiaryColor;
     opacity: 0.8;
     @include transition(opacity);
-    &:hover, &.active { opacity: 1; }
+    &:hover { opacity: 1; }
   }
   & img {
     margin: 20px;
@@ -55,11 +54,6 @@
     &:hover {
       background-color: $tertiaryColor;
       & a { color: $primaryColor; }
-    }
-
-    &.active {
-      border-bottom: solid 2px $tertiaryColor;
-      & a { opacity: 1; }
     }
   }
 }
