@@ -2,5 +2,12 @@ $primaryColor: rgba(35,31,32,1);
 $secondaryColor: rgba(183,51,36,1);
 $tertiaryColor: rgba(255,255,255,1);
 
+@mixin transition($property: all) {
+  -webkit-transition: $property .3s ease;
+  -moz-transition: $property .3s ease;
+  transition: $property .3s ease;
+}
+
 @import 'header';
+@import 'footer';
 

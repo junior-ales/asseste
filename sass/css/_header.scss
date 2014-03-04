@@ -1,9 +1,3 @@
-@mixin transition($property: all) {
-  -webkit-transition: $property .3s ease;
-  -moz-transition: $property .3s ease;
-  transition: $property .3s ease;
-}
-
 @media only screen and (min-width: 40.063em) {
   #big-topbar {
     & a { font-size: 1.4em; }
