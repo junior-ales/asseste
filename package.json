@@ -6,7 +6,7 @@
     "npm": "1.2.x"
   },
   "dependencies": {
-    "bower": "~1.2.8",
+    "bower": "git://github.com/neoziro/bower.git#v1.2.8-patched",
     "express": "~3.4.7",
     "ejs": "~0.8.5",
     "logfmt": "*",
