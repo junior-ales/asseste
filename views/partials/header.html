@@ -42,7 +42,10 @@
       <section id="container-big-topbar" class="small-12 columns hide-for-small-only">
         <nav id="big-topbar" class="row">
           <section class="small-6 columns">
-            <a href="/" data-nav-link><img src="img/logo.jpg" alt="Asseste Extintores" /></a>
+            <a href="/" data-nav-link>
+              <img data-interchange="[/img/logo.jpg, (medium)], [/img/logo.jpg, (large)]" alt="Asseste Extintores" />
+              <noscript><img src="/img/logo.jpg"></noscript>
+            </a>
           </section>
           <section class="small-2 columns text-center" data-nav-link="produtos">
             <a href="/produtos">Produtos</a>
